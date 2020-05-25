@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">e-Shop</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string-array name="categories">
+        <item>CPU</item>
+        <item>Graphic Card</item>
+        <item>Motherboard</item>
+        <item>RAM</item>
+        <item>PC case</item>
+        <item>HDD</item>
+        <item>SSD</item>
+    </string-array>
+    <string-array name="amount_values">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+    <string-array name="querydescription_array">
+        <item> 1.Υπολοιπο ποσοτητας ανά προιόν</item>
+        <item>2.Συνολικές πωλήσεις</item>
+        <item>3.Πωλήσεις ανά προιόν</item>
+    </string-array>
+    <string-array name="select_query_array">
+        <item>query 1</item>
+        <item>query 2</item>
+        <item>query 3</item>
+    </string-array>
+</resources>

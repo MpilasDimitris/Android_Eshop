@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/product_rowID"
+    android:padding="12dp"
+    >
+    <LinearLayout
+        android:id="@+id/linearCart"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="#e1e1e1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/categorTV"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:text="Category      "
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/categoryCart_row"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteY="60dp" />
+
+    <TextView
+        android:id="@+id/categoryCart_row"
+        android:layout_width="162dp"
+        android:layout_height="22dp"
+        android:textSize="20sp"
+        app:layout_constraintHorizontal_bias="0.883"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+         />
+
+    <TextView
+        android:id="@+id/nameTV"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:text="Name           "
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/nameCart_row"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/categorTV" />
+
+    <TextView
+        android:id="@+id/nameCart_row"
+        android:layout_width="161dp"
+        android:layout_height="24dp"
+        android:textSize="18sp"
+        app:layout_constraintHorizontal_bias="0.883"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/categoryCart_row" />
+
+    <TextView
+        android:id="@+id/priceTV"
+        android:layout_width="100dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="40dp"
+        android:text="Price             "
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/priceCart_row"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nameTV" />
+
+
+    <TextView
+        android:id="@+id/priceCart_row"
+        app:layout_constraintHorizontal_bias="0.883"
+        android:inputType="textPersonName"
+        android:layout_width="161dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/nameCart_row"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textSize="14sp" />
+
+
+
+
+
+    <TextView
+        android:id="@+id/capacityTV"
+        android:layout_width="100dp"
+        android:layout_height="24dp"
+        android:layout_marginEnd="40dp"
+        android:text="Capacity             "
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/capacityCart_row"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/priceTV" />
+
+    <TextView
+        android:id="@+id/capacityCart_row"
+        app:layout_constraintHorizontal_bias="0.883"
+        android:inputType="textPersonName"
+        android:layout_width="161dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/priceCart_row"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textSize="14sp" />
+
+
+    <TextView
+        android:id="@+id/descriptionTV"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:text="Description   "
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@+id/descriptionCart_row"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/capacityTV" />
+
+    <TextView
+        app:layout_constraintHorizontal_bias="0.883"
+        android:id="@+id/descriptionCart_row"
+        android:textSize="14sp"
+        android:layout_width="161dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/capacityCart_row"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <ImageView
+        android:id="@+id/delete_icon"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_delete"
+        android:foregroundGravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/descriptionTV"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

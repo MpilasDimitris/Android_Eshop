@@ -1,0 +1,83 @@
+<RelativeLayout
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cartFragment">
+<!--Σε αυτό το layout εμφανίζεται το σύνολο των προιόντων που έχουν μπει στο καλάθι -->
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:id="@+id/layout_total"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:padding="5dp"
+        android:weightSum="2">
+
+        <TextView android:gravity="end"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:text="Total : "
+            android:textSize="20dp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/tv_total"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:text=" 0 "
+            android:textSize="20dp">
+        </TextView>
+    </LinearLayout>
+
+<!--Εδώ έχουμε τον recyclerView που θα εμφανιζονται τα προιόντα που βαλαμε στο καλαθι -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/addToCartRecyclerView"
+        android:layout_above="@+id/layout_totalPrice"
+        android:layout_below="@+id/layout_total"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent">
+    </androidx.recyclerview.widget.RecyclerView>
+    <!--Σε αυτο το layout εμφανίζεται το συνολικό ποσο πληρωμής -->
+    <LinearLayout
+        android:id="@+id/layout_totalPrice"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_above="@+id/btn_placeorder"
+        android:padding="5dp"
+        android:weightSum="2">
+
+        <TextView android:gravity="end"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:text="Total price : "
+            android:textSize="20dp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/totalPrice_TV"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="bottom"
+            android:layout_width="match_parent"
+            android:text=" 0 "
+            android:textSize="20dp">
+        </TextView>
+    </LinearLayout>
+    <!--Το κουμπι για να παμε στην ολοκληρωση της αγορας -->
+
+    <Button
+        android:id="@+id/btn_placeorder"
+        android:layout_gravity="center|bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_height="60dp"
+        android:layout_width="match_parent"
+        android:onClick="insertOrder"
+        android:text="Place Order" />
+
+
+</RelativeLayout>

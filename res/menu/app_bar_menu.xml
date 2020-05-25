@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<!--παρακάτω φαινονται τα items που δημιουργησα για τα εικονίδια του home και cart  -->
+    <item
+        android:id="@+id/home_icon"
+        android:title="Home"
+        android:icon="@mipmap/baseline_home_white_48"
+        app:showAsAction="ifRoom">
+
+    </item>
+<item
+    android:id="@+id/action_cart"
+    android:title="Add to cart"
+    android:icon="@mipmap/baseline_add_shopping_cart_white_48"
+    app:showAsAction="ifRoom">
+</item>
+
+</menu>
